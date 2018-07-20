@@ -1,0 +1,17 @@
+{
+  "categories" :[
+    "Elijah & Paula",
+    "Pop Culture",
+    "Black History",
+    "Charlotte",
+    "Logos",
+    "Slogans"
+  ],
+  "200": [
+      {"q":"what is google",
+      "points": 200,
+      "answered": false,
+      "dailyDouble": false
+      }
+  ]
+}
