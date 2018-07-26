@@ -1,7 +1,10 @@
-import { Injectable } from '@angular/core';
-import { Overlay, OverlayRef, OverlayConfig } from '@angular/cdk/overlay';
-import { Portal, ComponentPortal } from '@angular/cdk/portal';
+import { Injectable, ComponentRef, InjectionToken } from '@angular/core';
+import { Overlay, OverlayConfig, OverlayRef } from '@angular/cdk/overlay';
+import { Portal, ComponentPortal, PortalInjector } from '@angular/cdk/portal';
 import { QuestionInfoOverlayComponent } from '../question-info-overlay/question-info-overlay.component';
+import {QuestionInfoOverlayRef} from "./question-info-overlayRef";
+
+export const QUESTION_INFO_DATA = new InjectionToken('QUESTION_INFO_DATA');
 
 interface questionInfoPanelConfig {
   panelClass?: string;
@@ -24,27 +27,34 @@ export class QuestionInfoOverlayService {
 
   open(panelConfig : questionInfoPanelConfig) {
 
-    // Returns an OverlayRef (which is a PortalHost)
-    const overlayRef = this.overlay.create(this.getOverlayConfig(panelConfig));
+    const config = {...DEFAULT_CONFIG, ...panelConfig},
+          overlayRef = this.createOverlay(config),
+          questionInfoPortal = new ComponentPortal(QuestionInfoOverlayComponent),
+          questionInfoOverlayRef = new QuestionInfoOverlayRef(overlayRef);
 
-    // Create ComponentPortal that can be attached to a PortalHost
-    const questionInfoPortal = new ComponentPortal(QuestionInfoOverlayComponent);
-
-    // Attach ComponentPortal to PortalHost
     overlayRef.attach(questionInfoPortal);
+
+    overlayRef.backdropClick().subscribe(_ => questionInfoOverlayRef.close());
+    return questionInfoOverlayRef;
   }
+
+  private createOverlay(config:questionInfoPanelConfig) {
+    const overlayConfig = this.getOverlayConfig(config);
+
+    return this.overlay.create(overlayConfig);
+  }
+
 
   private getOverlayConfig(config: questionInfoPanelConfig): OverlayConfig {
     const positionStrategy = this.overlay.position()
       .global()
       .centerHorizontally()
-      .centerVertically();
+      .centerVertically(),
 
-    const overlayConfig = new OverlayConfig({
+     overlayConfig = new OverlayConfig({
       hasBackdrop: config.hasBackdrop,
       backdropClass: config.backdropClass,
       panelClass: config.panelClass,
-      scrollStrategy: this.overlay.scrollStrategies.block(),
       height: config.height,
       width: config.width,
       positionStrategy
