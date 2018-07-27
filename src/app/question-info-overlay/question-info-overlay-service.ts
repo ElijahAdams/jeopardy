@@ -1,4 +1,4 @@
-import { Injectable, ComponentRef, InjectionToken } from '@angular/core';
+import { Injectable, ComponentRef, InjectionToken, Injector } from '@angular/core';
 import { Overlay, OverlayConfig, OverlayRef } from '@angular/cdk/overlay';
 import { Portal, ComponentPortal, PortalInjector } from '@angular/cdk/portal';
 import { QuestionInfoOverlayComponent } from '../question-info-overlay/question-info-overlay.component';
@@ -23,18 +23,20 @@ const DEFAULT_CONFIG: questionInfoPanelConfig = {
 
 @Injectable()
 export class QuestionInfoOverlayService {
-  constructor(private overlay: Overlay) { }
+  constructor(private overlay: Overlay,  private injector: Injector) { }
 
   open(panelConfig : questionInfoPanelConfig) {
 
     const config = {...DEFAULT_CONFIG, ...panelConfig},
+
           overlayRef = this.createOverlay(config),
-          questionInfoPortal = new ComponentPortal(QuestionInfoOverlayComponent),
-          questionInfoOverlayRef = new QuestionInfoOverlayRef(overlayRef);
 
-    overlayRef.attach(questionInfoPortal);
 
-    overlayRef.backdropClick().subscribe(_ => questionInfoOverlayRef.close());
+          questionInfoOverlayRef = new QuestionInfoOverlayRef(overlayRef),
+
+          questionInfoPortal = this.attachDataContainer(overlayRef,config,questionInfoOverlayRef);
+
+
     return questionInfoOverlayRef;
   }
 
@@ -63,4 +65,23 @@ export class QuestionInfoOverlayService {
     return overlayConfig;
   }
 
+
+  private createInjector(config: questionInfoPanelConfig, overlayRef: QuestionInfoOverlayRef): PortalInjector {
+    const injectionTokens = new WeakMap();
+
+    //tell the injection token what you want to be available in the overlay component
+    injectionTokens.set(QuestionInfoOverlayRef, overlayRef);
+    return new PortalInjector(this.injector, injectionTokens);
+  }
+
+  private attachDataContainer(overlayRef: OverlayRef, config: questionInfoPanelConfig,
+                              questionInfoOverlayRef: QuestionInfoOverlayRef) {
+
+    const injector = this.createInjector(config, questionInfoOverlayRef);
+    const containerPortal = new ComponentPortal(QuestionInfoOverlayComponent, null, injector);
+    //console.log(containerPortal.injector.get(QuestionInfoOverlayRef));
+    const containerRef: ComponentRef<QuestionInfoOverlayComponent> = overlayRef.attach(containerPortal);
+
+    return containerRef.instance;
+  }
 }

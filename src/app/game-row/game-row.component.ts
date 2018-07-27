@@ -25,10 +25,9 @@ export class GameRowComponent  {
         width: '500px',
         height: '500px'
       });
+
   }
 
-  closePopUp() {
-    this.overlayRef.close();
-  }
+
 }
 
