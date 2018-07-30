@@ -6,9 +6,11 @@ import {MatDialogModule} from '@angular/material/dialog';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
 import {OverlayModule} from '@angular/cdk/overlay';
-import {MatSliderModule} from '@angular/material/slider';
 import { QuestionInfoOverlayComponent } from './question-info-overlay/question-info-overlay.component';
 import {QuestionInfoOverlayService} from './question-info-overlay/question-info-overlay-service';
+import {MatRadioModule} from '@angular/material/radio';
+import {MatButtonModule} from '@angular/material/button';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +23,8 @@ import {QuestionInfoOverlayService} from './question-info-overlay/question-info-
     MatFormFieldModule,
     FormsModule,
     OverlayModule,
-    MatSliderModule
+    MatRadioModule,
+    MatButtonModule
   ],
   providers: [QuestionInfoOverlayService],
   bootstrap: [AppComponent],

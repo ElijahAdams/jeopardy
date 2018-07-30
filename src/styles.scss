@@ -1,5 +1,7 @@
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 @import "~bootstrap/dist/css/bootstrap.css";
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+@import url('https://fonts.googleapis.com/css?family=Rosario');
 
 body{
   background-color: #060CE9;
@@ -13,6 +15,8 @@ body{
 
 .card-body{
   color: #FFFF00;
+  font-size: 25px;
+  font-family: 'Rosario', sans-serif;
 }
 
 .cdk-overlay-backdrop.cdk-overlay-backdrop-showing {
@@ -25,4 +29,8 @@ body{
 .jeo-panel-class {
   background-color: #060CE9;
   color: white;
+  display: flex;
+  justify-content: center;
 }
+
+

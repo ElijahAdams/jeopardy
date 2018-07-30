@@ -8,4 +8,17 @@
   background-color: #060CE9;
 }
 
+#scoreboard {
+  padding-bottom: 30px;
 
+}
+
+.teamName {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 30px;
+}
+
+.teamScore {
+  font-size: 20px;
+  font-family: 'Rosario', sans-serif;
+}

@@ -1,5 +1,15 @@
-<p>
-  question-info-overlay works!
-</p>
-
-<button (click)="closeOverlay()">close overlay</button>
+<div class="questionContainer">
+  <p>
+  question
+  </p>
+  <div>
+    <label class="radio-inline spaceRadio" *ngFor="let team of teams">
+      <input type="radio" name="teamRadioButton" (click)="selectedTeam(team)" > {{team.name}}
+    </label>
+  </div>
+  <br>
+  <div class="closingDiv">
+    <button mat-button class="closeButton" (click)="closeOverlay()">close overlay</button>
+    <button mat-button class="closeButton" (click)="closeOverlay()">close overlay</button>
+  </div>
+</div>

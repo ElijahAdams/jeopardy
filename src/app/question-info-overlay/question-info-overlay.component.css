@@ -1,5 +1,20 @@
-@import url('https://fonts.googleapis.com/css?family=Karla');
-p {
-  font-family: 'Karla', cursive;
-  font-size: 40px;
+
+.questionContainer {
+  padding: 20px;
+}
+
+.closingDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.closeButton {
+  position: relative;
+  bottom: -330px;
+
+}
+
+.spaceRadio {
+  padding: 0 0 10px 10px;
 }

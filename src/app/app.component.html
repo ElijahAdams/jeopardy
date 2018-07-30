@@ -1,7 +1,19 @@
 <nav id="headerLabel" class="navbar navbar-light jeopardyBlue" >
  <img src="../assets/JeopardyLogo.svg" height="80px" width="120px" style="color: yellow;">
 </nav>
-<div class="container-fluid">
+<div id="scoreboard" class="container-fluid">
+  <div class="row">
+    <div class="col" *ngFor="let team of teams" style="height: 50px; color: white; ">
+      <div class="text-center  ">
+        <span class="teamScore">{{team.score}}</span>
+        <br>
+        <span class="teamName">{{team.name}}</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="questionCategories" class="container-fluid">
   <div class="row">
     <div class="col card" *ngFor="let catogory of categories"  style="height: 100px;">
       <div class="card-body text-center">
@@ -11,8 +23,8 @@
   </div>
 </div>
 <app-game-row [questionsArrayInfo]="points200"></app-game-row>
-<app-game-row [questionsArrayInfo]="points200"></app-game-row>
-<app-game-row></app-game-row>
-<app-game-row></app-game-row>
-<app-game-row></app-game-row>
-<app-game-row></app-game-row>
+<app-game-row [questionsArrayInfo]="points400"></app-game-row>
+<app-game-row [questionsArrayInfo]="points600"></app-game-row>
+<app-game-row [questionsArrayInfo]="points800"></app-game-row>
+<app-game-row [questionsArrayInfo]="points1000" ></app-game-row>
+

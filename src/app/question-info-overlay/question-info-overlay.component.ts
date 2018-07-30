@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
-import {QuestionInfoOverlayRef} from '../question-info-overlay/question-info-overlayRef';
+import { Component} from '@angular/core';
+import { QuestionInfoOverlayRef } from '../question-info-overlay/question-info-overlayRef';
+import { teams } from '../app.component';
+import {ScoringService} from "../scoring.service";
 
 @Component({
   selector: 'app-question-info-overlay',
@@ -8,8 +10,20 @@ import {QuestionInfoOverlayRef} from '../question-info-overlay/question-info-ove
 })
 export class QuestionInfoOverlayComponent {
 
+  teams = teams;
+  scoringTeam;
+constructor(public questionInfoOverlayRef: QuestionInfoOverlayRef, public scoringService:ScoringService){
+
+}
+
   closeOverlay() {
-    console.log('close me');
+    this.questionInfoOverlayRef.close();
+    if(this.scoringTeam) {
+      this.scoringService.sendScore(this.scoringTeam, 200);
+    }
   }
 
+  selectedTeam(team) {
+    this.scoringTeam = team;
+  }
 }

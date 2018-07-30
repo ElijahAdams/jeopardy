@@ -3,6 +3,8 @@ import { Overlay, OverlayConfig, OverlayRef } from '@angular/cdk/overlay';
 import { Portal, ComponentPortal, PortalInjector } from '@angular/cdk/portal';
 import { QuestionInfoOverlayComponent } from '../question-info-overlay/question-info-overlay.component';
 import {QuestionInfoOverlayRef} from "./question-info-overlayRef";
+import { Observable } from 'rxjs';
+import { of } from 'rxjs';
 
 export const QUESTION_INFO_DATA = new InjectionToken('QUESTION_INFO_DATA');
 
@@ -13,16 +15,19 @@ interface questionInfoPanelConfig {
   height?: string;
   width?: string;
 }
+
 const DEFAULT_CONFIG: questionInfoPanelConfig = {
   hasBackdrop: true,
   backdropClass: 'dark-backdrop',
   panelClass: 'jeo-panel-class',
-  width: '500px',
+  //width: '500px',
   height: '500px'
 }
 
 @Injectable()
 export class QuestionInfoOverlayService {
+   scored;
+
   constructor(private overlay: Overlay,  private injector: Injector) { }
 
   open(panelConfig : questionInfoPanelConfig) {
@@ -84,4 +89,5 @@ export class QuestionInfoOverlayService {
 
     return containerRef.instance;
   }
+
 }
