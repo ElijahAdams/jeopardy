@@ -22,3 +22,5 @@
   font-size: 20px;
   font-family: 'Rosario', sans-serif;
 }
+
+.hideScore { display:none }

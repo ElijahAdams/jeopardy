@@ -9,12 +9,10 @@
   justify-content: center;
 }
 
-.closeButton {
-  position: relative;
-  bottom: -330px;
-
-}
-
 .spaceRadio {
   padding: 0 0 10px 10px;
+}
+
+.dailyDoubleIcon {
+
 }

@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
-declare var require: any
+import { Component, Renderer2 } from '@angular/core';
+declare var require: any;
 import { ScoringService } from './scoring.service';
-import {forEach} from "@angular/router/src/utils/collection";
+
 
 
 @Component({
@@ -21,7 +21,7 @@ export class AppComponent {
   points800 = this.questionsFromJson['800'];
   points1000 = this.questionsFromJson['1000'];
 
-  constructor(public scoringService: ScoringService) {
+  constructor(public scoringService: ScoringService, public renderer: Renderer2) {
     this.subscription = this.scoringService.getScore().subscribe(teamAndPoints =>  {
       this.updatePoints(teamAndPoints);
     });
@@ -33,6 +33,35 @@ export class AppComponent {
         }
       });
     }
+
+  manualPointProcess(team) {
+    event.srcElement.classList.add('hideScore');
+    const scoreInputElement = this.createScoreInputElement(event,team);
+    event.srcElement.insertAdjacentElement('beforebegin', scoreInputElement);
+    scoreInputElement.focus();
+  }
+
+  createScoreInputElement(clickEvent,team) {
+   const element = document.createElement("input");
+    element.type = 'text';
+    element.value = team.score;
+    this.renderer.listen(element,'keyup.enter',() => {
+      this.manualUpdatePoints(element,team);
+      element.remove();
+      clickEvent.srcElement.classList.remove('hideScore');
+      });
+
+    this.renderer.listen(element,'blur',() => {
+      this.manualUpdatePoints(element,team);
+      element.remove();
+      clickEvent.srcElement.classList.remove('hideScore');
+    });
+    return element
+  }
+
+  manualUpdatePoints(element,team) {
+    team.score = parseInt(element.value);
+  }
 
 }
 

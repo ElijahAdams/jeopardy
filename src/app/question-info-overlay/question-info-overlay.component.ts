@@ -12,18 +12,24 @@ export class QuestionInfoOverlayComponent {
 
   teams = teams;
   scoringTeam;
-constructor(public questionInfoOverlayRef: QuestionInfoOverlayRef, public scoringService:ScoringService){
+  points = 200;
+  constructor(public questionInfoOverlayRef: QuestionInfoOverlayRef, public scoringService:ScoringService){
 
-}
+  }
 
   closeOverlay() {
     this.questionInfoOverlayRef.close();
+
     if(this.scoringTeam) {
-      this.scoringService.sendScore(this.scoringTeam, 200);
+      this.sendPoints();
     }
   }
 
   selectedTeam(team) {
     this.scoringTeam = team;
+  }
+
+  sendPoints() {
+    this.scoringService.sendScore(this.scoringTeam, this.points);
   }
 }

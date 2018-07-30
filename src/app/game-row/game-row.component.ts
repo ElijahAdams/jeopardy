@@ -17,7 +17,8 @@ export class GameRowComponent  {
 
   }
 
-  createPopUp() {
+  createPopUp(questionInfo) {
+    this.updateQuestionObject(questionInfo);
     this.overlayRef  = this.questionInfoOverlay.open({
         hasBackdrop: true,
         backdropClass: 'dark-backdrop',
@@ -26,6 +27,14 @@ export class GameRowComponent  {
         height: '500px'
       });
 
+    if(questionInfo.dailyDouble) {
+      const audio = new Audio('../../assets/dailyDouble.mp3');
+      audio.play();
+    }
+  }
+
+  updateQuestionObject(questionInfo) {
+    questionInfo['isAnswered'] = true;
   }
 
 

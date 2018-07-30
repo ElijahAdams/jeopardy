@@ -2,16 +2,16 @@
   "categories" :[
     "Elijah & Paula",
     "Pop Culture",
-    "Black History",
-    "Charlotte",
-    "Logos",
-    "Slogans"
+    "North Carolina",
+    "Song Lyrics",
+    "Movies",
+    "Animals"
   ],
   "200": [
       {"q":"what is google",
       "points": 200,
       "answered": false,
-      "dailyDouble": false
+      "dailyDouble": true
       },
     {"q":"what is google",
       "points": 200,

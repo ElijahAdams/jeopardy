@@ -1,15 +1,22 @@
 <div class="questionContainer">
-  <p>
-  question
+  <p style="font-size: 20px">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+    malesuada porttitor nisi at tincidunt. Aliquam gravida justo maximus
+    lectus elementum tristique. Praesent in ex quis sem laoreet molestie.
+    Donec lacinia dolor a nisl mollis, quis dignissim erat egestas. Pellentesque scelerisque lorem nec feugiat
+    commodo. Fusce ac eros eget felis placerat ultricies. Curabitur
+    eros turpis, egestas eu sapien at, efficitur placerat diam.
   </p>
-  <div>
-    <label class="radio-inline spaceRadio" *ngFor="let team of teams">
-      <input type="radio" name="teamRadioButton" (click)="selectedTeam(team)" > {{team.name}}
-    </label>
+  <div >
+    <fieldset style="text-align: center">
+      <label class="radio-inline spaceRadio" *ngFor="let team of teams">
+        <input type="radio" name="teamRadioButton" (click)="selectedTeam(team)" > {{team.name}}
+      </label>
+    </fieldset>
   </div>
   <br>
   <div class="closingDiv">
-    <button mat-button class="closeButton" (click)="closeOverlay()">close overlay</button>
-    <button mat-button class="closeButton" (click)="closeOverlay()">close overlay</button>
+    <button mat-button (click)="closeOverlay()">close</button>
   </div>
 </div>
+<!--<img id="dailyDoubleIcon"  height="500px" width="500px" src="../../assets/dailyDouble.png">-->

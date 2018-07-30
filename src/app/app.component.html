@@ -4,8 +4,8 @@
 <div id="scoreboard" class="container-fluid">
   <div class="row">
     <div class="col" *ngFor="let team of teams" style="height: 50px; color: white; ">
-      <div class="text-center  ">
-        <span class="teamScore">{{team.score}}</span>
+      <div class="text-center">
+        <span  class="teamScore" (click)="manualPointProcess(team)">{{team.score}}</span>
         <br>
         <span class="teamName">{{team.name}}</span>
       </div>

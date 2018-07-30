@@ -1,8 +1,8 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col card" *ngFor="let questionInfo of questionsArrayInfo"  style="height: 100px;">
-      <div class="card-body text-center" (click)="createPopUp()">
-        {{questionInfo.points}}
+      <div class="card-body text-center" (click)="createPopUp(questionInfo)">
+        <span *ngIf="!questionInfo.isAnswered">{{questionInfo.points}}</span>
       </div>
     </div>
   </div>
