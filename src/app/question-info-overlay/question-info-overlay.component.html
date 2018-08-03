@@ -1,11 +1,6 @@
 <div class="questionContainer">
   <p style="font-size: 20px">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-    malesuada porttitor nisi at tincidunt. Aliquam gravida justo maximus
-    lectus elementum tristique. Praesent in ex quis sem laoreet molestie.
-    Donec lacinia dolor a nisl mollis, quis dignissim erat egestas. Pellentesque scelerisque lorem nec feugiat
-    commodo. Fusce ac eros eget felis placerat ultricies. Curabitur
-    eros turpis, egestas eu sapien at, efficitur placerat diam.
+    {{question}}
   </p>
   <div >
     <fieldset style="text-align: center">
@@ -19,4 +14,5 @@
     <button mat-button (click)="closeOverlay()">close</button>
   </div>
 </div>
-<!--<img id="dailyDoubleIcon"  height="500px" width="500px" src="../../assets/dailyDouble.png">-->
+<!--<img *ngIf="showingDailyDouble" id="dailyDoubleIcon"  height="500px" width="500px" src="../../assets/dailyDouble.png">-->
+<!--<div class="animatedDailyDouble fadeOut"></div>-->

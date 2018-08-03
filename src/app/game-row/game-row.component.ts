@@ -9,6 +9,7 @@ import {QuestionInfoOverlayRef} from '../question-info-overlay/question-info-ove
   templateUrl: './game-row.component.html',
   styleUrls: ['./game-row.component.css']
 })
+
 export class GameRowComponent  {
 
   @Input() questionsArrayInfo;
@@ -24,13 +25,10 @@ export class GameRowComponent  {
         backdropClass: 'dark-backdrop',
         panelClass: 'jeo-panel-class',
         width: '500px',
-        height: '500px'
+        height: '500px',
+        data:questionInfo
       });
 
-    if(questionInfo.dailyDouble) {
-      const audio = new Audio('../../assets/dailyDouble.mp3');
-      audio.play();
-    }
   }
 
   updateQuestionObject(questionInfo) {

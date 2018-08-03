@@ -2,11 +2,18 @@ import { Injectable, ComponentRef, InjectionToken, Injector } from '@angular/cor
 import { Overlay, OverlayConfig, OverlayRef } from '@angular/cdk/overlay';
 import { Portal, ComponentPortal, PortalInjector } from '@angular/cdk/portal';
 import { QuestionInfoOverlayComponent } from '../question-info-overlay/question-info-overlay.component';
-import {QuestionInfoOverlayRef} from "./question-info-overlayRef";
-import { Observable } from 'rxjs';
-import { of } from 'rxjs';
+import { QuestionInfoOverlayRef } from "./question-info-overlayRef";
+import { QUESTION_INFO_DATA } from "./question-info-overlay.tokens";
 
-export const QUESTION_INFO_DATA = new InjectionToken('QUESTION_INFO_DATA');
+
+export interface Question {
+  q: string,
+  points: number,
+  answered: boolean,
+  dailyDouble?: boolean,
+  picURL?:string
+
+}
 
 interface questionInfoPanelConfig {
   panelClass?: string;
@@ -14,6 +21,7 @@ interface questionInfoPanelConfig {
   backdropClass?: string;
   height?: string;
   width?: string;
+  data?:Question;
 }
 
 const DEFAULT_CONFIG: questionInfoPanelConfig = {
@@ -76,6 +84,7 @@ export class QuestionInfoOverlayService {
 
     //tell the injection token what you want to be available in the overlay component
     injectionTokens.set(QuestionInfoOverlayRef, overlayRef);
+    injectionTokens.set(QUESTION_INFO_DATA, config.data);
     return new PortalInjector(this.injector, injectionTokens);
   }
 
@@ -91,3 +100,4 @@ export class QuestionInfoOverlayService {
   }
 
 }
+
