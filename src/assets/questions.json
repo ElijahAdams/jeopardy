@@ -1,5 +1,6 @@
 {
-  "categories" :[
+
+  "categories": [
     "Elijah & Paula",
     "Pop Culture",
     "North Carolina",
@@ -7,164 +8,195 @@
     "Movies",
     "Animals"
   ],
-  "200": [
-      {"q":"what is google",
+  "r1": [
+    {
+      "q": "what is google",
       "points": 200,
       "answered": false,
       "dailyDouble": true
-      },
-    {"q":"what is google",
+    },
+    {
+      "q": "what is google",
       "points": 200,
       "answered": false,
       "dailyDouble": false
     },
-    {"q":"what is google",
+    {
+      "q": "what is google",
       "points": 200,
       "answered": false,
       "dailyDouble": false
     },
-    {"q":"what is google",
+    {
+      "q": "what is google",
       "points": 200,
       "answered": false,
       "dailyDouble": false
     },
-    {"q":"what is google",
+    {
+      "q": "what is google",
       "points": 200,
       "answered": false,
       "dailyDouble": false
     },
-    {"q":"what is google",
-      "points": 200,
-      "answered": false,
-      "dailyDouble": false
-    }
-  ],
-  "400": [
-    {"q":"what is google",
-      "points": 400,
-      "answered": false,
-      "dailyDouble": false
-    },
-    {"q":"what is google",
-      "points": 400,
-      "answered": false,
-      "dailyDouble": false
-    },
-    {"q":"what is google",
-      "points": 400,
-      "answered": false,
-      "dailyDouble": false
-    },
-    {"q":"what is google",
-      "points": 400,
-      "answered": false,
-      "dailyDouble": false
-    },
-    {"q":"what is google",
-      "points": 400,
-      "answered": false,
-      "dailyDouble": false
-    },
-    {"q":"what is google",
-      "points": 400,
-      "answered": false,
-      "dailyDouble": false
-    }
-  ],
-  "600": [
-    {"q":"what is google",
-      "points": 200,
-      "answered": false,
-      "dailyDouble": false
-    },
-    {"q":"what is google",
-      "points": 200,
-      "answered": false,
-      "dailyDouble": false
-    },
-    {"q":"what is google",
-      "points": 200,
-      "answered": false,
-      "dailyDouble": false
-    },
-    {"q":"what is google",
-      "points": 200,
-      "answered": false,
-      "dailyDouble": false
-    },
-    {"q":"what is google",
-      "points": 200,
-      "answered": false,
-      "dailyDouble": false
-    },
-    {"q":"what is google",
+    {
+      "q": "what is google",
       "points": 200,
       "answered": false,
       "dailyDouble": false
     }
   ],
-  "800": [
-    {"q":"what is google",
+  "r2": [
+    {
+      "q": "what is google",
+      "points": 400,
+      "answered": false,
+      "dailyDouble": false
+    },
+    {
+      "q": "what is google",
+      "points": 400,
+      "answered": false,
+      "dailyDouble": false
+    },
+    {
+      "q": "what is google",
+      "points": 400,
+      "answered": false,
+      "dailyDouble": false
+    },
+    {
+      "q": "what is google",
+      "points": 400,
+      "answered": false,
+      "dailyDouble": false
+    },
+    {
+      "q": "what is google",
+      "points": 400,
+      "answered": false,
+      "dailyDouble": false
+    },
+    {
+      "q": "what is google",
+      "points": 400,
+      "answered": false,
+      "dailyDouble": false
+    }
+  ],
+  "r3": [
+    {
+      "q": "what is google",
       "points": 200,
       "answered": false,
       "dailyDouble": false
     },
-    {"q":"what is google",
+    {
+      "q": "what is google",
       "points": 200,
       "answered": false,
       "dailyDouble": false
     },
-    {"q":"what is google",
+    {
+      "q": "what is google",
       "points": 200,
       "answered": false,
       "dailyDouble": false
     },
-    {"q":"what is google",
+    {
+      "q": "what is google",
       "points": 200,
       "answered": false,
       "dailyDouble": false
     },
-    {"q":"what is google",
+    {
+      "q": "what is google",
       "points": 200,
       "answered": false,
       "dailyDouble": false
     },
-    {"q":"what is google",
+    {
+      "q": "what is google",
       "points": 200,
       "answered": false,
       "dailyDouble": false
     }
   ],
-  "1000": [
-    {"q":"what is google",
+  "r4": [
+    {
+      "q": "what is google",
       "points": 200,
       "answered": false,
       "dailyDouble": false
     },
-    {"q":"what is google",
+    {
+      "q": "what is google",
       "points": 200,
       "answered": false,
       "dailyDouble": false
     },
-    {"q":"what is google",
+    {
+      "q": "what is google",
       "points": 200,
       "answered": false,
       "dailyDouble": false
     },
-    {"q":"what is google",
+    {
+      "q": "what is google",
       "points": 200,
       "answered": false,
       "dailyDouble": false
     },
-    {"q":"what is google",
+    {
+      "q": "what is google",
       "points": 200,
       "answered": false,
       "dailyDouble": false
     },
-    {"q":"what is google",
+    {
+      "q": "what is google",
+      "points": 200,
+      "answered": false,
+      "dailyDouble": false
+    }
+  ],
+  "r5": [
+    {
+      "q": "what is google",
+      "points": 200,
+      "answered": false,
+      "dailyDouble": false
+    },
+    {
+      "q": "what is google",
+      "points": 200,
+      "answered": false,
+      "dailyDouble": false
+    },
+    {
+      "q": "what is google",
+      "points": 200,
+      "answered": false,
+      "dailyDouble": false
+    },
+    {
+      "q": "what is google",
+      "points": 200,
+      "answered": false,
+      "dailyDouble": false
+    },
+    {
+      "q": "what is google",
+      "points": 200,
+      "answered": false,
+      "dailyDouble": false
+    },
+    {
+      "q": "what is google",
       "points": 200,
       "answered": false,
       "dailyDouble": false
     }
   ]
 }
+

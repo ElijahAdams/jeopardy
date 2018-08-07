@@ -93,7 +93,6 @@ export class QuestionInfoOverlayService {
 
     const injector = this.createInjector(config, questionInfoOverlayRef);
     const containerPortal = new ComponentPortal(QuestionInfoOverlayComponent, null, injector);
-    //console.log(containerPortal.injector.get(QuestionInfoOverlayRef));
     const containerRef: ComponentRef<QuestionInfoOverlayComponent> = overlayRef.attach(containerPortal);
 
     return containerRef.instance;

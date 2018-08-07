@@ -1,4 +1,4 @@
-<div class="questionContainer">
+<div *ngIf="!showingDailyDouble" class="questionContainer">
   <p style="font-size: 20px">
     {{question}}
   </p>
@@ -11,8 +11,17 @@
   </div>
   <br>
   <div class="closingDiv">
+    <button *ngIf="!showCountdown" mat-button class="clockIcon" (click)="startTimer()"></button>
+    <br>
+    <span *ngIf="showCountdown" style="font-size: 20px" (click)="resetTimer()">{{countdown}}</span>
+  </div>
+  <br>
+  <div class="closingDiv">
+    <button mat-button (click)="deductPoints()">deduct</button>
+  </div>
+  <div class="closingDiv">
     <button mat-button (click)="closeOverlay()">close</button>
   </div>
 </div>
-<!--<img *ngIf="showingDailyDouble" id="dailyDoubleIcon"  height="500px" width="500px" src="../../assets/dailyDouble.png">-->
-<!--<div class="animatedDailyDouble fadeOut"></div>-->
+
+<img *ngIf="showingDailyDouble"  (click)="toggleDailyDouble()" id="dailyDoubleIcon"  height="700px" width="700px" src="../../assets/dailyDouble.png">

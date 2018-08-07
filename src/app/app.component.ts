@@ -15,11 +15,11 @@ export class AppComponent {
   subscription;
   questionsFromJson = require('../assets/questions.json');
   categories = this.questionsFromJson['categories'];
-  points200 = this.questionsFromJson['200'];
-  points400 = this.questionsFromJson['400'];
-  points600 = this.questionsFromJson['600'];
-  points800 = this.questionsFromJson['800'];
-  points1000 = this.questionsFromJson['1000'];
+  r1 = this.questionsFromJson['r1'];
+  r2 = this.questionsFromJson['r2'];
+  r3 = this.questionsFromJson['r3'];
+  r4 = this.questionsFromJson['r4'];
+  r5 = this.questionsFromJson['r5'];
 
   constructor(public scoringService: ScoringService, public renderer: Renderer2) {
     this.subscription = this.scoringService.getScore().subscribe(teamAndPoints =>  {

@@ -2,7 +2,3 @@ Things left to do
 
 1. I need a central place to hold question data that can be updated.
 2. Write the data to local storage.
-3. pass in question data to the overlay. Question and how many points its worth.
-4. Create Daily Doubles (animation for daily double fade)
-5. Add Timer and refresh button on time
-7. sounds
