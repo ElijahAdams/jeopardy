@@ -23,7 +23,7 @@ export class QuestionInfoOverlayComponent {
   showCountdown = false;
   countdown;
   interval;
-
+  picURL;
   constructor(public questionInfoOverlayRef: QuestionInfoOverlayRef,@Inject(QUESTION_INFO_DATA) public questionData: any, public scoringService:ScoringService){
     this.points = questionData.points;
     this.question = questionData.q;
@@ -32,6 +32,7 @@ export class QuestionInfoOverlayComponent {
       audio.play();
     }
     this.showingDailyDouble = questionData.dailyDouble ? this.questionData.dailyDouble : false;
+    this.picURL = questionData.picURL ? questionData.picURL : '';
   }
 
   closeOverlay() {

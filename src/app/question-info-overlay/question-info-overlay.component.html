@@ -1,26 +1,23 @@
 <div *ngIf="!showingDailyDouble" class="questionContainer">
-  <p style="font-size: 20px">
+  <p>
     {{question}}
   </p>
-  <div >
-    <fieldset style="text-align: center">
-      <label class="radio-inline spaceRadio" *ngFor="let team of teams">
-        <input type="radio" name="teamRadioButton" (click)="selectedTeam(team)" > {{team.name}}
-      </label>
-    </fieldset>
-  </div>
+  <br>
+  <img class="questionImage" *ngIf="picURL !== ''" src="{{picURL}}">
   <br>
   <div class="closingDiv">
     <button *ngIf="!showCountdown" mat-button class="clockIcon" (click)="startTimer()"></button>
     <br>
-    <span *ngIf="showCountdown" style="font-size: 20px" (click)="resetTimer()">{{countdown}}</span>
+    <span *ngIf="showCountdown" (click)="resetTimer()">{{countdown}}</span>
   </div>
   <br>
+  <fieldset style="text-align: center">
+    <label class="radio-inline spaceRadio" *ngFor="let team of teams">
+      <input type="radio" name="teamRadioButton" (click)="selectedTeam(team)" > {{team.name}}
+    </label>
+  </fieldset>
   <div class="closingDiv">
-    <button mat-button (click)="deductPoints()">deduct</button>
-  </div>
-  <div class="closingDiv">
-    <button mat-button (click)="closeOverlay()">close</button>
+    <button mat-button (click)="deductPoints()">deduct</button><button mat-button (click)="closeOverlay()">complete</button>
   </div>
 </div>
 

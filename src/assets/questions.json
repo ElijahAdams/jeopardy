@@ -1,202 +1,214 @@
 {
-
-  "categories": [
-    "Elijah & Paula",
+  "categories":[
     "Pop Culture",
-    "North Carolina",
-    "Song Lyrics",
-    "Movies",
-    "Animals"
+    "Angular & Angularjs",
+    "Riddles",
+    "charlotte",
+    "Logos"
   ],
   "r1": [
     {
-      "q": "what is google",
+      "q": "This Line is from what movie..... Luke I am your father",
       "points": 200,
       "answered": false,
-      "dailyDouble": true
+      "dailyDouble": false,
+      "picURL":"",
+      "answer" : "Starwars"
     },
     {
-      "q": "what is google",
+      "q": "what company invented AngularJs?",
       "points": 200,
       "answered": false,
-      "dailyDouble": false
+      "dailyDouble": false,
+      "picURL":"",
+      "answer" : "google"
     },
     {
-      "q": "what is google",
+      "q": " What has hands but can not clap?",
       "points": 200,
       "answered": false,
-      "dailyDouble": false
+      "dailyDouble": false,
+      "picURL":"",
+      "answer" : "A Clock"
     },
     {
-      "q": "what is google",
+      "q": "Downtown charlotte is commonly called _______ the opposite of downtown?",
       "points": 200,
       "answered": false,
-      "dailyDouble": false
+      "dailyDouble": false,
+      "picURL":"",
+      "answer" : "uptown"
     },
     {
-      "q": "what is google",
+      "q": "",
       "points": 200,
       "answered": false,
-      "dailyDouble": false
-    },
-    {
-      "q": "what is google",
-      "points": 200,
-      "answered": false,
-      "dailyDouble": false
+      "dailyDouble": false,
+      "picURL":"https://vignette.wikia.nocookie.net/disney/images/0/0c/Apple_1998_Logo.png/revision/latest?cb=20150821231545",
+      "answer" : "apple"
     }
   ],
   "r2": [
     {
-      "q": "what is google",
+      "q": "Which actor plays the role of Captain Jack Sparrow in the Pirates of the Caribbean movies?",
       "points": 400,
       "answered": false,
-      "dailyDouble": false
+      "dailyDouble": false,
+      "picURL":"",
+      "answer" :"Johnny Depp"
     },
     {
-      "q": "what is google",
+      "q": "What was the final version number of angularjs to release",
       "points": 400,
       "answered": false,
-      "dailyDouble": false
+      "dailyDouble": false,
+      "picURL":"",
+      "answer": "1.7"
     },
     {
-      "q": "what is google",
+      "q": "What comes once in a minute, twice in a moment, but never in a thousand years?",
       "points": 400,
       "answered": false,
-      "dailyDouble": false
+      "dailyDouble": false,
+      "picURL":"",
+      "answer": "the letter m"
     },
     {
-      "q": "what is google",
+      "q": "Name the charlotte minor league baseball team",
       "points": 400,
       "answered": false,
-      "dailyDouble": false
+      "dailyDouble": false,
+      "picURL":"",
+      "answer": "Knights"
     },
     {
-      "q": "what is google",
+      "q": "",
       "points": 400,
       "answered": false,
-      "dailyDouble": false
-    },
-    {
-      "q": "what is google",
-      "points": 400,
-      "answered": false,
-      "dailyDouble": false
+      "dailyDouble": false,
+      "picURL":"http://logok.org/wp-content/uploads/2015/02/Domino-logo-880x660.png",
+      "answer": "dominos"
     }
   ],
   "r3": [
     {
-      "q": "what is google",
-      "points": 200,
+      "q": "who is this",
+      "points": 600,
       "answered": false,
-      "dailyDouble": false
+      "dailyDouble": false,
+      "picURL":"https://media.wmagazine.com/photos/5aec66031d94a90faa7b10a4/4:3/w_1536/kris-jenner-smirk.jpg",
+      "answer" : "Kris Jenner"
     },
     {
-      "q": "what is google",
-      "points": 200,
+      "q": "directive that instantiates a template once per item from a collection?",
+      "points": 600,
       "answered": false,
-      "dailyDouble": false
+      "dailyDouble": false,
+      "picURL":"",
+      "answer": "ng-repeat"
     },
     {
-      "q": "what is google",
-      "points": 200,
+      "q": "I’m an odd number. If you take away one of the letters in my name, I become even. What number am I? ",
+      "points": 600,
       "answered": false,
-      "dailyDouble": false
+      "dailyDouble": false,
+      "picURL":""
     },
     {
-      "q": "what is google",
-      "points": 200,
+      "q": "Who is the owner of the charlotte Hornets",
+      "points": 600,
       "answered": false,
-      "dailyDouble": false
+      "dailyDouble": false,
+      "picURL":"",
+      "answer": "Micheal Jordan"
     },
     {
-      "q": "what is google",
-      "points": 200,
+      "q": "",
+      "points": 600,
       "answered": false,
-      "dailyDouble": false
-    },
-    {
-      "q": "what is google",
-      "points": 200,
-      "answered": false,
-      "dailyDouble": false
+      "dailyDouble": false,
+      "picURL":"https://educatedmachine.com/wp-content/uploads/2017/02/rockstar-logo.png",
+      "answer":"rockstar"
     }
   ],
   "r4": [
     {
-      "q": "what is google",
-      "points": 200,
+      "q": "Name the song from Lyrics.... You try to scream But terror takes the sound before you make it You start to freeze As horror looks you right between your eyes",
+      "points": 800,
       "answered": false,
-      "dailyDouble": false
+      "dailyDouble": true,
+      "picURL":"",
+      "answer":"thriller"
     },
     {
-      "q": "what is google",
-      "points": 200,
+      "q": "What is the final life cycle hook in the angular(2+) cycle",
+      "points": 800,
       "answered": false,
-      "dailyDouble": false
+      "dailyDouble": false,
+      "picURL":"",
+      "answer":"ngOnDestroy"
     },
     {
-      "q": "what is google",
-      "points": 200,
+      "q": "David's father has three sons : Snap, Crackle and _____ ?",
+      "points": 800,
       "answered": false,
-      "dailyDouble": false
+      "dailyDouble": false,
+      "picURL":"",
+      "answer":"David"
     },
     {
-      "q": "what is google",
-      "points": 200,
+      "q": " ",
+      "points": 800,
       "answered": false,
-      "dailyDouble": false
+      "dailyDouble": false,
+      "picURL":""
     },
     {
-      "q": "what is google",
-      "points": 200,
+      "q": " ",
+      "points": 800,
       "answered": false,
-      "dailyDouble": false
-    },
-    {
-      "q": "what is google",
-      "points": 200,
-      "answered": false,
-      "dailyDouble": false
+      "dailyDouble": false,
+      "picURL":"https://bower.io/img/bower-logo.png",
+      "answer": "bower"
     }
   ],
   "r5": [
     {
-      "q": "what is google",
-      "points": 200,
+      "q": "What is the name of the most recent bachelorette?",
+      "points": 1000,
       "answered": false,
-      "dailyDouble": false
+      "dailyDouble": false,
+      "picURL":"",
+      "answer":"Becca"
     },
     {
-      "q": "what is google",
-      "points": 200,
+      "q": "",
+      "points": 1000,
       "answered": false,
-      "dailyDouble": false
+      "dailyDouble": false,
+      "picURL":""
     },
     {
-      "q": "what is google",
-      "points": 200,
+      "q": "Three times what number is no larger than two times that same number? ",
+      "points": 1000,
       "answered": false,
-      "dailyDouble": false
+      "dailyDouble": false,
+      "picURL":"",
+      "answer":"0"
     },
     {
-      "q": "what is google",
-      "points": 200,
+      "q": "",
+      "points": 1000,
       "answered": false,
-      "dailyDouble": false
+      "dailyDouble": false,
+      "picURL":""
     },
     {
-      "q": "what is google",
-      "points": 200,
+      "q": "",
+      "points": 1000,
       "answered": false,
-      "dailyDouble": false
-    },
-    {
-      "q": "what is google",
-      "points": 200,
-      "answered": false,
-      "dailyDouble": false
+      "dailyDouble": false,
+      "picURL":""
     }
   ]
 }
-

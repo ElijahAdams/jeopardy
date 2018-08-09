@@ -1,6 +1,8 @@
 import { Component, Renderer2 } from '@angular/core';
 declare var require: any;
 import { ScoringService } from './scoring.service';
+import {QuestionInfoOverlayRef} from "./question-info-overlay/question-info-overlayRef";
+import {QuestionInfoOverlayService} from "./question-info-overlay/question-info-overlay-service";
 
 
 
@@ -10,18 +12,19 @@ import { ScoringService } from './scoring.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
+  overlayRef: QuestionInfoOverlayRef;
   teams = teams;
   subscription;
   questionsFromJson = require('../assets/questions.json');
   categories = this.questionsFromJson['categories'];
+
   r1 = this.questionsFromJson['r1'];
   r2 = this.questionsFromJson['r2'];
   r3 = this.questionsFromJson['r3'];
   r4 = this.questionsFromJson['r4'];
   r5 = this.questionsFromJson['r5'];
 
-  constructor(public scoringService: ScoringService, public renderer: Renderer2) {
+  constructor(public scoringService: ScoringService, public renderer: Renderer2, private questionInfoOverlay: QuestionInfoOverlayService) {
     this.subscription = this.scoringService.getScore().subscribe(teamAndPoints =>  {
       this.updatePoints(teamAndPoints);
     });
@@ -60,7 +63,28 @@ export class AppComponent {
   }
 
   manualUpdatePoints(element,team) {
-    team.score = parseInt(element.value);
+    if(element.value) {
+      team.score = parseInt(element.value);
+    }
+    else {
+      team.score = team.score;
+    }
+  }
+
+  openExample() {
+    this.overlayRef  = this.questionInfoOverlay.open({
+      hasBackdrop: true,
+      backdropClass: 'dark-backdrop',
+      panelClass: 'jeo-panel-class',
+      width: '700px',
+      height: '700px',
+      data: {
+        "q": "what is google",
+        "points": 200,
+        "answered": false,
+        "dailyDouble": false
+      },
+    });
   }
 
 }
@@ -69,4 +93,6 @@ export class AppComponent {
 export const teams = [
   {name:'team 1', score: 0},
   {name:'team 2', score: 0},
-  {name:'team 3', score: 0},];
+  {name:'team 3', score: 0},
+  {name:'team 4', score: 0},
+  {name:'team 5', score: 0}];

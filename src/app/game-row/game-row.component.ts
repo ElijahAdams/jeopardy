@@ -13,7 +13,7 @@ import {QuestionInfoOverlayRef} from '../question-info-overlay/question-info-ove
 export class GameRowComponent  {
 
   @Input() questionsArrayInfo;
-  overlayRef: QuestionInfoOverlayRef
+  overlayRef: QuestionInfoOverlayRef;
   constructor(private overlay:Overlay, private questionInfoOverlay: QuestionInfoOverlayService, public renderer: Renderer2){
 
   }
