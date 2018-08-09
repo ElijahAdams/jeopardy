@@ -19,6 +19,11 @@
   <div class="closingDiv">
     <button mat-button (click)="deductPoints()">deduct</button><button mat-button (click)="closeOverlay()">complete</button>
   </div>
+  <div class="closingDiv">
+    <button mat-button (click)="toggleAnswer()">answer</button>
+    <span *ngIf="showAnswer">{{answer}}</span>
+  </div>
+
 </div>
 
 <img *ngIf="showingDailyDouble"  (click)="toggleDailyDouble()" id="dailyDoubleIcon"  height="700px" width="700px" src="../../assets/dailyDouble.png">

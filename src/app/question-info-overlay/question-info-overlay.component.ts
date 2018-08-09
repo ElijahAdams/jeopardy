@@ -24,6 +24,8 @@ export class QuestionInfoOverlayComponent {
   countdown;
   interval;
   picURL;
+  answer;
+  showAnswer = false;
   constructor(public questionInfoOverlayRef: QuestionInfoOverlayRef,@Inject(QUESTION_INFO_DATA) public questionData: any, public scoringService:ScoringService){
     this.points = questionData.points;
     this.question = questionData.q;
@@ -33,6 +35,7 @@ export class QuestionInfoOverlayComponent {
     }
     this.showingDailyDouble = questionData.dailyDouble ? this.questionData.dailyDouble : false;
     this.picURL = questionData.picURL ? questionData.picURL : '';
+    this.answer = questionData.answer;
   }
 
   closeOverlay() {
@@ -77,5 +80,9 @@ export class QuestionInfoOverlayComponent {
   resetTimer() {
     clearInterval(this.interval);
     this.showCountdown = false;
+  }
+
+  toggleAnswer(){
+    this.showAnswer = !this.showAnswer;
   }
 }

@@ -11,7 +11,8 @@ export interface Question {
   points: number,
   answered: boolean,
   dailyDouble?: boolean,
-  picURL?:string
+  picURL?:string,
+  answer:string
 
 }
 

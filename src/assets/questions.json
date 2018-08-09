@@ -111,8 +111,9 @@
       "q": "I’m an odd number. If you take away one of the letters in my name, I become even. What number am I? ",
       "points": 600,
       "answered": false,
-      "dailyDouble": false,
-      "picURL":""
+      "dailyDouble": true,
+      "picURL":"",
+      "answer":"seven"
     },
     {
       "q": "Who is the owner of the charlotte Hornets",
@@ -183,12 +184,12 @@
       "answer":"Becca"
     },
     {
-      "q": "",
+      "q": "what is the name of the engine angular6 runs on?",
       "points": 1000,
       "answered": false,
       "dailyDouble": false,
       "picURL":"",
-      "answer":""
+      "answer":"ivy"
     },
     {
       "q": "Three times what number is no larger than two times that same number? ",

@@ -50,13 +50,12 @@ export class AppComponent {
     element.value = team.score;
     this.renderer.listen(element,'keyup.enter',() => {
       this.manualUpdatePoints(element,team);
-      element.remove();
       clickEvent.srcElement.classList.remove('hideScore');
       });
 
     this.renderer.listen(element,'blur',() => {
       this.manualUpdatePoints(element,team);
-      element.remove();
+      element ? element.remove(): console.log();
       clickEvent.srcElement.classList.remove('hideScore');
     });
     return element
@@ -82,17 +81,32 @@ export class AppComponent {
         "q": "what is google",
         "points": 200,
         "answered": false,
-        "dailyDouble": false
+        "dailyDouble": false,
+        "answer":"google"
       },
     });
   }
 
+  finalJeo(){
+    this.overlayRef  = this.questionInfoOverlay.open({
+      hasBackdrop: true,
+      backdropClass: 'dark-backdrop',
+      panelClass: 'jeo-panel-class',
+      width: '700px',
+      height: '700px',
+      data: {
+        "q": "Who created javascript?",
+        "points": 0,
+        "answered": false,
+        "dailyDouble": false,
+        "answer":"Brendan Eich"
+      },
+    });
+  }
 }
 
 
 export const teams = [
   {name:'team 1', score: 0},
   {name:'team 2', score: 0},
-  {name:'team 3', score: 0},
-  {name:'team 4', score: 0},
-  {name:'team 5', score: 0}];
+  {name:'team 3', score: 0}];
