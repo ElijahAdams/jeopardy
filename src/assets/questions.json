@@ -157,14 +157,15 @@
       "answer":"David"
     },
     {
-      "q": " ",
+      "q": "What year was charlotte officially incorporated under charlotte town",
       "points": 800,
       "answered": false,
       "dailyDouble": false,
-      "picURL":""
+      "picURL":"",
+      "answer":"1768"
     },
     {
-      "q": " ",
+      "q": "",
       "points": 800,
       "answered": false,
       "dailyDouble": false,
@@ -186,7 +187,8 @@
       "points": 1000,
       "answered": false,
       "dailyDouble": false,
-      "picURL":""
+      "picURL":"",
+      "answer":""
     },
     {
       "q": "Three times what number is no larger than two times that same number? ",
@@ -197,18 +199,20 @@
       "answer":"0"
     },
     {
-      "q": "",
+      "q": "What is the oldest house in uptown charlotte",
       "points": 1000,
       "answered": false,
       "dailyDouble": false,
-      "picURL":""
+      "picURL":"",
+      "answer":"Hezekiah Alexander House"
     },
     {
       "q": "",
       "points": 1000,
       "answered": false,
       "dailyDouble": false,
-      "picURL":""
+      "picURL":"https://i.pinimg.com/originals/96/4c/90/964c90cad16299ba9a4597f713bdd256.png",
+      "answer":"singapore airlines"
     }
   ]
 }
