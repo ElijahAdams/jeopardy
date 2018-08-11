@@ -15,7 +15,7 @@ export class AppComponent {
   overlayRef: QuestionInfoOverlayRef;
   teams = teams;
   subscription;
-  questionsFromJson = require('../assets/questions.json');
+  questionsFromJson = require('../assets/questions2.json');
   categories = this.questionsFromJson['categories'];
 
   r1 = this.questionsFromJson['r1'];
@@ -95,11 +95,11 @@ export class AppComponent {
       width: '700px',
       height: '700px',
       data: {
-        "q": "Who created javascript?",
+        "q": "The company contracted to build this house",
         "points": 0,
         "answered": false,
         "dailyDouble": false,
-        "answer":"Brendan Eich"
+        "answer":"Ryan Homes"
       },
     });
   }
@@ -107,6 +107,7 @@ export class AppComponent {
 
 
 export const teams = [
-  {name:'team 1', score: 0},
-  {name:'team 2', score: 0},
-  {name:'team 3', score: 0}];
+  {name:'K & K', score: 0},
+  {name:'A & B', score: 0},
+  {name:'C & T', score: 0},
+  {name:'J', score: 0}];

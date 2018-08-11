@@ -2,200 +2,260 @@
 
   "categories": [
     "Elijah & Paula",
-    "Pop Culture",
+    "Logos",
     "North Carolina",
-    "Song Lyrics",
+    "Songs",
     "Movies",
-    "Animals"
+    "Riddles"
   ],
   "r1": [
     {
-      "q": "what is google",
+      "q": "Birthday Month",
       "points": 200,
       "answered": false,
-      "dailyDouble": true
+      "dailyDouble": false,
+      "picURL":"",
+      "answer":"May"
     },
     {
-      "q": "what is google",
+      "q": "",
       "points": 200,
       "answered": false,
-      "dailyDouble": false
+      "dailyDouble": false,
+      "picURL":"http://logok.org/wp-content/uploads/2015/02/Domino-logo-880x660.png",
+      "answer":"Dominos"
     },
     {
-      "q": "what is google",
+      "q": "The Capital of North Carolina",
       "points": 200,
       "answered": false,
-      "dailyDouble": false
+      "dailyDouble": false,
+      "picURL":"",
+      "answer":"Raleigh"
     },
     {
-      "q": "what is google",
+      "q": "Keke, Do you love me. Are you Riding...",
       "points": 200,
       "answered": false,
-      "dailyDouble": false
+      "dailyDouble": false,
+      "picURL":"",
+      "answer":"In my feelings"
     },
     {
-      "q": "what is google",
+      "q": "Luke I am your father",
       "points": 200,
       "answered": false,
-      "dailyDouble": false
+      "dailyDouble": false,
+      "picURL":"",
+      "answer":"star wars"
     },
     {
-      "q": "what is google",
+      "q": "what has hands but cannot clap",
       "points": 200,
       "answered": false,
-      "dailyDouble": false
+      "dailyDouble": false,
+      "picURL":"",
+      "answer":"A clock"
     }
   ],
   "r2": [
     {
-      "q": "what is google",
+      "q": "The modal car they drive",
       "points": 400,
       "answered": false,
-      "dailyDouble": false
+      "dailyDouble": false,
+      "picURL":"",
+      "answer":"Camry"
     },
     {
-      "q": "what is google",
+      "q": "",
       "points": 400,
       "answered": false,
-      "dailyDouble": false
+      "dailyDouble": false,
+      "picURL":"https://educatedmachine.com/wp-content/uploads/2017/02/rockstar-logo.png",
+      "answer":"Rockstar games"
     },
     {
-      "q": "what is google",
+      "q": "City of the Duke Blue Devils",
       "points": 400,
       "answered": false,
-      "dailyDouble": false
+      "dailyDouble": false,
+      "picURL":"",
+      "answer":"Durham"
     },
     {
-      "q": "what is google",
+      "q": "Vamos a hacerlo en una playa en Puerto Rico Hasta que las olas griten ¡ay, bendito!",
       "points": 400,
       "answered": false,
-      "dailyDouble": false
+      "dailyDouble": false,
+      "picURL":"",
+      "answer":"Despacito"
     },
     {
-      "q": "what is google",
+      "q": "Princess of the amazonians, banned from her home land, Shero",
       "points": 400,
       "answered": false,
-      "dailyDouble": false
+      "dailyDouble": false,
+      "picURL":"",
+      "answer":"Wonder Woman"
     },
     {
-      "q": "what is google",
+      "q": "I’m an odd number. If you take away one of the letters in my name, I become even.",
       "points": 400,
       "answered": false,
-      "dailyDouble": false
+      "dailyDouble": false,
+      "picURL":"",
+      "answer":"Seven"
     }
   ],
   "r3": [
     {
-      "q": "what is google",
-      "points": 200,
+      "q": "The last destination of their most recent vacation",
+      "points": 600,
       "answered": false,
-      "dailyDouble": false
+      "dailyDouble": false,
+      "picURL":"",
+      "answer":"Jamaica"
     },
     {
-      "q": "what is google",
-      "points": 200,
+      "q": "",
+      "points": 600,
       "answered": false,
-      "dailyDouble": false
+      "dailyDouble": false,
+      "picURL":"https://i.pinimg.com/originals/ae/6f/b0/ae6fb026f4245a1e3040faf7637ab3b9.png",
+      "answer":"Amazon"
     },
     {
-      "q": "what is google",
-      "points": 200,
+      "q": "The birth place of cookout fast food",
+      "points": 600,
       "answered": false,
-      "dailyDouble": false
+      "dailyDouble": false,
+      "picURL":"",
+      "answer":"greensboro"
     },
     {
-      "q": "what is google",
-      "points": 200,
+      "q": "Rain Drop, Drop top Smokin' on cookie in the hotbox....",
+      "points": 600,
       "answered": false,
-      "dailyDouble": false
+      "dailyDouble": false,
+      "picURL":"",
+      "answer":"Bad and Boujee"
     },
     {
-      "q": "what is google",
-      "points": 200,
+      "q": "Toto, I've got a feeling we're not in Kansas anymore.",
+      "points": 600,
       "answered": false,
-      "dailyDouble": false
+      "dailyDouble": false,
+      "picURL":"",
+      "answer":"The Wizard of oz"
     },
     {
-      "q": "what is google",
-      "points": 200,
+      "q": "comes once in a minute, twice in a moment, but never in a thousand years",
+      "points": 600,
       "answered": false,
-      "dailyDouble": false
+      "dailyDouble": true,
+      "picURL":"",
+      "answer":"The letter M"
     }
   ],
   "r4": [
     {
-      "q": "what is google",
-      "points": 200,
+      "q": "favorite restaurant",
+      "points": 800,
       "answered": false,
-      "dailyDouble": false
+      "dailyDouble": false,
+      "picURL":"",
+      "answer":"Lunas Living kitchen"
     },
     {
-      "q": "what is google",
-      "points": 200,
+      "q": "",
+      "points": 800,
       "answered": false,
-      "dailyDouble": false
+      "dailyDouble": false,
+      "picURL":"https://goodlogo.com/images/logos/bacardi_logo_2471.gif",
+      "answer":"Bacardi"
     },
     {
-      "q": "what is google",
-      "points": 200,
+      "q": "Mountain range in NC containing Mount Mitchell the highest point in the eastern U.S.",
+      "points": 800,
       "answered": false,
-      "dailyDouble": false
+      "dailyDouble": true,
+      "picURL":"",
+      "answer":"Blue Ridge"
     },
     {
-      "q": "what is google",
-      "points": 200,
+      "q": "I'm waking up to ash and dust I wipe my brow and I sweat my rust",
+      "points": 800,
       "answered": false,
-      "dailyDouble": false
+      "dailyDouble": false,
+      "picURL":"",
+      "answer":"Radioactive"
     },
     {
-      "q": "what is google",
-      "points": 200,
+      "q": "A census taker once tried to test me. I ate his liver with some fava beans and a nice chianti.",
+      "points": 800,
       "answered": false,
-      "dailyDouble": false
+      "dailyDouble": false,
+      "picURL":"",
+      "answer":"Silence of the Lambs"
     },
     {
-      "q": "what is google",
-      "points": 200,
+      "q": "David's father has three sons : Snap, Crackle and _____ ",
+      "points": 800,
       "answered": false,
-      "dailyDouble": false
+      "dailyDouble": false,
+      "picURL":"",
+      "answer":"David"
     }
   ],
   "r5": [
     {
-      "q": "what is google",
-      "points": 200,
+      "q": "Location of their first date",
+      "points": 1000,
       "answered": false,
-      "dailyDouble": false
+      "dailyDouble": false,
+      "picURL":"",
+      "answer":"Soul Gastrolounge"
     },
     {
-      "q": "what is google",
-      "points": 200,
+      "q": "",
+      "points": 1000,
       "answered": false,
-      "dailyDouble": false
+      "dailyDouble": false,
+      "picURL":"https://i.pinimg.com/originals/96/4c/90/964c90cad16299ba9a4597f713bdd256.png",
+      "answer":"singapore airlines"
     },
     {
-      "q": "what is google",
-      "points": 200,
+      "q": "Where the first controlled flight took place",
+      "points": 1000,
       "answered": false,
-      "dailyDouble": false
+      "dailyDouble": true,
+      "picURL":"",
+      "answer":"Kitty Hawk"
     },
     {
-      "q": "what is google",
-      "points": 200,
+      "q": "It's close to midnight Something evil's lurking from the dark Under the moonlight You see a sight that almost stops your heart",
+      "points": 1000,
       "answered": false,
-      "dailyDouble": false
+      "dailyDouble": false,
+      "picURL":"",
+      "answer":"Thriller"
     },
     {
-      "q": "what is google",
-      "points": 200,
+      "q": "hakuna matata",
+      "points": 1000,
       "answered": false,
-      "dailyDouble": false
+      "dailyDouble": false,
+      "picURL":"",
+      "answer":"lion king"
     },
     {
-      "q": "what is google",
-      "points": 200,
+      "q": "Black and white and red all over ",
+      "points": 1000,
       "answered": false,
-      "dailyDouble": false
+      "dailyDouble": false,
+      "picURL":"",
+      "answer":"newspaper"
     }
   ]
 }
