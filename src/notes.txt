@@ -1,5 +1,39 @@
-Things left to do
+Lauren neer & Friend
+Party Rental company
 
-1. I need a central place to hold question data that can be updated ***
-2. Write the data to local storag***
-4. questions board 1 and 2
+Weddings, Bachelorette and bachelor parties
+
+1. Is this a single page application
+
+2. Is it static or dynamic content
+
+3. Do you have a design in mind of need design help
+
+4. How do you envisions users contacting you?
+
+5. Who are some of those companies
+
+Problem: User comes to them with a budget and where they want to go and Lauren would plan and coordinate food, room and board
+GotYourBach
+
+6. website is just for contact really
+
+
+They have a designer.
+They have a photographer.
+
+
+American Tire distributers
+TimeLine
+1.
+
+
+Pages
+1. Home page
+2. About us page
+3. Contact page
+4. Vendor page images that link out to other websites
+5. Admin page to dynamically edit things
+
+Contact me page
+

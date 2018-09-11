@@ -1,0 +1,261 @@
+{
+  "categories":[
+    "Movies",
+    "Music Artist",
+    "Black History",
+    "Sports",
+    "Geography",
+    "Logos"
+  ],
+  "r1": [
+    {
+      "q": "Luke I am your father",
+      "points": 200,
+      "answered": false,
+      "dailyDouble": false,
+      "picURL":"",
+      "answer" : "Starwars"
+    },
+    {
+      "q": "",
+      "points": 200,
+      "answered": false,
+      "dailyDouble": false,
+      "picURL":"https://chevaliertheatre.com/wp-content/uploads/sites/3/2018/08/PattieLabelleartist_page-1-550x350.jpg",
+      "answer" : "Patti Labelle"
+    },
+    {
+      "q": "Woman leading the underground railroad ",
+      "points": 200,
+      "answered": false,
+      "dailyDouble": false,
+      "picURL":"",
+      "answer" : "Harriet Tubman"
+    },
+    {
+      "q": "You can get a Home run in this sport",
+      "points": 200,
+      "answered": false,
+      "dailyDouble": false,
+      "picURL":"",
+      "answer" : "Baseball"
+    },
+    {
+      "q": "Location of pyramids",
+      "points": 200,
+      "answered": false,
+      "dailyDouble": false,
+      "picURL":"",
+      "answer" : "Egypt"
+    },
+    {
+      "q": "",
+      "points": 200,
+      "answered": false,
+      "dailyDouble": false,
+      "picURL":"https://vignette.wikia.nocookie.net/disney/images/0/0c/Apple_1998_Logo.png/revision/latest?cb=20150821231545",
+      "answer" : "apple"
+    }
+  ],
+  "r2": [
+    {
+      "q": "Life is like a box of chocolate, you never know what your going to get.",
+      "points": 400,
+      "answered": false,
+      "dailyDouble": false,
+      "picURL":"",
+      "answer" : "Forest Gump"
+    },
+    {
+      "q": "",
+      "points": 400,
+      "answered": false,
+      "dailyDouble": false,
+      "picURL":"https://e.snmc.io/i/300/s/06eb3d46829bf04aecc91fb19d5c3d75/1121214",
+      "answer" : "2pac"
+    },
+    {
+      "q": "I have a dream ",
+      "points": 400,
+      "answered": false,
+      "dailyDouble": false,
+      "picURL":"",
+      "answer" : "Martin Luther King"
+    },
+    {
+      "q": "Team with the most superbowl wins",
+      "points": 400,
+      "answered": false,
+      "dailyDouble": false,
+      "picURL":"",
+      "answer" : "Steelers"
+    },
+    {
+      "q": "Largest Continent",
+      "points": 400,
+      "answered": false,
+      "dailyDouble": false,
+      "picURL":"",
+      "answer" : "Asia"
+    },
+    {
+      "q": "",
+      "points": 400,
+      "answered": false,
+      "dailyDouble": false,
+      "picURL":"http://cdn.playbuzz.com/cdn/5c58be94-5e4c-4e51-8126-4d2a51eb4b3d/e5e98b78-6513-4d3d-9f61-4cdb55116055.jpg",
+      "answer" : "Taco Bell"
+    }
+  ],
+  "r3": [
+    {
+      "q": "I see dead people",
+      "points": 600,
+      "answered": false,
+      "dailyDouble": false,
+      "picURL":"",
+      "answer" : "The Sixth Sense"
+    },
+    {
+      "q": "",
+      "points": 600,
+      "answered": false,
+      "dailyDouble": true,
+      "picURL":"https://www.thoughtco.com/thmb/2T_afcPqKKePfYzpKRMiKb1Ravw=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/aaliyah-58d949493df78c516201067c.jpg",
+      "answer" : "Aaliyah"
+    },
+    {
+      "q": "el-Hajj Malik el-Shabazz",
+      "points": 600,
+      "answered": false,
+      "dailyDouble": false,
+      "picURL":"",
+      "answer" : "Malcolm X"
+    },
+    {
+      "q": "Scored 100 points in an NBA basketball Game",
+      "points": 600,
+      "answered": false,
+      "dailyDouble": false,
+      "picURL":"",
+      "answer" : "Wilt Chamberlain"
+    },
+    {
+      "q": "U.S. state with most active volcanoes",
+      "points": 600,
+      "answered": false,
+      "dailyDouble": false,
+      "picURL":"",
+      "answer" : "Alaska"
+    },
+    {
+      "q": "",
+      "points": 600,
+      "answered": false,
+      "dailyDouble": false,
+      "picURL":"https://images-na.ssl-images-amazon.com/images/I/41K39f7BXZL._SY355_.png",
+      "answer" : "pinterest"
+    }
+  ],
+  "r4": [
+    {
+      "q": "hakuna matata",
+      "points": 800,
+      "answered": false,
+      "dailyDouble": false,
+      "picURL":"",
+      "answer" : "Lion King"
+    },
+    {
+      "q": "",
+      "points": 800,
+      "answered": false,
+      "dailyDouble": false,
+      "picURL":"https://thecjexclusive.files.wordpress.com/2011/06/swv-1.jpg",
+      "answer" : "SWV"
+    },
+    {
+      "q": "Day celebrated as black independence day",
+      "points": 800,
+      "answered": false,
+      "dailyDouble": false,
+      "picURL":"",
+      "answer" : "June 19th"
+    },
+    {
+      "q": "Woman with fastest 100 time ever",
+      "points": 800,
+      "answered": false,
+      "dailyDouble": false,
+      "picURL":"",
+      "answer" : "Florence Joyner"
+    },
+    {
+      "q": "Continent intersecting with the equator",
+      "points": 800,
+      "answered": false,
+      "dailyDouble": false,
+      "picURL":"",
+      "answer" : "South America"
+    },
+    {
+      "q": "",
+      "points": 800,
+      "answered": false,
+      "dailyDouble": false,
+      "picURL":"http://www.logosquizwalkthrough.com/images/bubble/paramount-pictures.jpg",
+      "answer" : "paramount"
+    }
+  ],
+  "r5": [
+    {
+      "q": "They don't gain another yard",
+      "points": 1000,
+      "answered": false,
+      "dailyDouble": false,
+      "picURL":"",
+      "answer" : "Remember the titans"
+    },
+    {
+      "q": "",
+      "points": 1000,
+      "answered": false,
+      "dailyDouble": false,
+      "picURL":"https://www.billboard.com/files/media/rich-the-kid-performance-april-2018-a-billboard-1548.jpg",
+      "answer" : "Rich The kid"
+    },
+    {
+      "q": "Black Wall street location",
+      "points": 1000,
+      "answered": false,
+      "dailyDouble": false,
+      "picURL":"",
+      "answer" : "Tulsa, OK"
+    },
+    {
+      "q": "Team with most Stanley Cup Wins",
+      "points": 1000,
+      "answered": false,
+      "dailyDouble": true,
+      "picURL":"",
+      "answer" : "Montreal Canadiens"
+    },
+    {
+      "q": "Least Populated State in the U.S. ",
+      "points": 1000,
+      "answered": false,
+      "dailyDouble": false,
+      "picURL":"",
+      "answer" : "Wyoming"
+    },
+    {
+      "q": "",
+      "points": 1000,
+      "answered": false,
+      "dailyDouble": false,
+      "picURL":"https://www.doctorsofchaos.com/wp-content/uploads/2017/04/Napster-Logo.png",
+      "answer" : "Napster"
+    }
+  ]
+
+}
